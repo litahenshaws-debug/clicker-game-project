@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Clicker Game</title>
+    <title>Advanced Clicker Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
         <h1>Coin Clicker!</h1>
         <p>Score: <span id="score">0</span></p>
+        <p>Score per Click: <span id="scorePerClickDisplay">1</span></p>
 
         <button id="clickButton">CLICK ME!</button>
         
@@ -17,11 +18,25 @@
 
         <h2>Upgrades</h2>
         <div class="upgrades-container">
+            
             <div class="upgrade">
-                <p>Auto-Clicker (1/sec)</p>
+                <p>Basic Auto-Clicker (1/sec)</p>
                 <p>Cost: <span id="autoClickerCost">10</span></p>
                 <button id="buyAutoClicker">Buy</button>
             </div>
+
+            <div class="upgrade">
+                <p>Click Power (+1 Score/Click)</p>
+                <p>Cost: <span id="clickPowerCost">50</span></p>
+                <button id="buyClickPower">Buy</button>
+            </div>
+
+            <div class="upgrade">
+                <p>Super Auto-Clicker (10/sec)</p>
+                <p>Cost: <span id="superAutoClickerCost">500</span></p>
+                <button id="buySuperAutoClicker">Buy</button>
+            </div>
+
         </div>
     </div>
 
